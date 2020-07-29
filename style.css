@@ -16,6 +16,10 @@ body {
 
 }
 
+#head-1:hover {
+    color: black;
+}
+
 #header {
     display: grid;
 }
@@ -38,8 +42,13 @@ body {
     text-align: center;
 }
 
-div:hover {
+#text:hover {
     color: black;
+}
+
+#body:hover {
+    transform: rotate(360deg);
+    
 }
 
 @media only screen and (min-width: 600px) {

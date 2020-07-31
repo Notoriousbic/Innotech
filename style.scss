@@ -1,0 +1,84 @@
+@import '_variables';
+@import '_mixins';
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    background-color: red;
+    color: $fontColor;
+}
+
+#head-1 
+{
+    text-align: center;
+    color: $fontColor;
+
+
+    #head-1:hover {
+    color: black;
+    }
+}
+
+
+#header {
+    display: grid;
+}
+
+#body {
+    width: 100%;
+    min-height: 10vh;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    text-align: center;
+}
+
+#text {
+    color: $fontColor;
+    text-align: center;
+}
+
+#review {
+    color: black;
+    text-align: center;
+}
+
+#text:hover {
+    color: black;
+}
+
+#body:hover {
+    @include rotate;
+
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        background-color: tomato;
+    }
+
+    #head-1 {
+        color: black;
+    }
+
+    #text {
+        color: black
+    }
+} 
+@media only screen and (min-width: 1020px) {
+    body {
+        background-color: rgb(105, 45, 34);
+    }
+
+    #head-1 {
+        color: red;
+    }
+    #text {
+        color: red;
+    }
+} 
